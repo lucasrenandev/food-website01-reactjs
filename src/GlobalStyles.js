@@ -20,15 +20,14 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     #root {
-        width: 100%;
         min-height: 100vh;
         background-color: var(--bg-color);
         color: var(--text-color);
     }
 
     section {
-        padding: 100px 5%;
         width: 100%;
+        padding: 100px 5%;
     }
 
     img {

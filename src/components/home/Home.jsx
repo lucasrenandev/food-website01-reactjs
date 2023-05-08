@@ -17,7 +17,7 @@ export default function home() {
             </HomeText>
 
             <HomeImage>
-                <Image src={homeImg}></Image>
+                <Image src={homeImg} alt="Home image"/>
             </HomeImage>
         </Home>
     )

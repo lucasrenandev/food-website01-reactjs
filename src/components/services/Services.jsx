@@ -15,19 +15,19 @@ export default function services() {
 
             <ServicesContainer>
                 <ServicesBox>
-                    <Image src={serviceImage1} alt="Service image 1"></Image>
+                    <Image src={serviceImage1} alt="Service image 1"/>
                     <H4>Order</H4>
                     <Paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint laudantium ratione repudiandae facilis beatae, laborum, illo fugit harum rem rerum assumenda modi ab voluptatem nisi laboriosam, iusto iure enim ullam.</Paragraph>
                 </ServicesBox>
 
                 <ServicesBox>
-                    <Image src={serviceImage2} alt="Service image 2"></Image>
+                    <Image src={serviceImage2} alt="Service image 2"/>
                     <H4>Shipping</H4>
                     <Paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint laudantium ratione repudiandae facilis beatae, laborum, illo fugit harum rem rerum assumenda modi ab voluptatem nisi laboriosam, iusto iure enim ullam.</Paragraph>
                 </ServicesBox>
 
                 <ServicesBox>
-                    <Image src={serviceImage3} alt="Service image 3"></Image>
+                    <Image src={serviceImage3} alt="Service image 3"/>
                     <H4>Delivered</H4>
                     <Paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint laudantium ratione repudiandae facilis beatae, laborum, illo fugit harum rem rerum assumenda modi ab voluptatem nisi laboriosam, iusto iure enim ullam.</Paragraph>
                 </ServicesBox>

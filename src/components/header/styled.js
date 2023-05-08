@@ -53,23 +53,24 @@ export const NavList = styled.ul`
 export const List = styled.li`
     padding: 0 22px;
 
+    .nav-link {
+        color: var(--text-color);
+        font-size: var(--p-font);
+        font-weight: 500;
+        transition: all 0.4s ease;
+        
+        &:hover {
+            color: var(--main-color);
+        }
+
+        @media screen and (max-width: 1114px) {
+            display: block;
+            padding: 20px 0;
+        }
+    }
+
     @media screen and (max-width: 1114px) {
         padding: 0;
-    }
-`
-export const LinkNav = styled.a`
-    color: var(--text-color);
-    font-size: var(--p-font);
-    font-weight: 500;
-    transition: all 0.4s ease;
-
-    &:hover {
-        color: var(--main-color);
-    }
-
-    @media screen and (max-width: 1114px) {
-        display: block;
-        padding: 20px 0;
     }
 `
 export const MenuIcon = styled.div`

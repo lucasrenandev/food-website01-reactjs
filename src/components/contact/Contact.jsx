@@ -5,7 +5,6 @@ import { RiFacebookFill }  from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { HashLink as Link } from "react-router-hash-link";
 
 export default function contact() {
     return(
@@ -14,11 +13,11 @@ export default function contact() {
                 <H5>Menu links</H5>
                 <Nav>
                     <NavList>
-                        <List><Link smooth to={'#home'}><NavLink>home</NavLink></Link></List>
-                        <List><Link smooth to={'#about'}><NavLink>about</NavLink></Link></List>
-                        <List><Link smooth to={'#menu'}><NavLink>menu</NavLink></Link></List>
-                        <List><Link smooth to={'#services'}><NavLink>Services</NavLink></Link></List>
-                        <List><Link smooth to={'#contact'}><NavLink>Contact</NavLink></Link></List>
+                        <List><NavLink href="#">home</NavLink></List>
+                        <List><NavLink href="#">about</NavLink></List>
+                        <List><NavLink href="#">menu</NavLink></List>
+                        <List><NavLink href="#">Services</NavLink></List>
+                        <List><NavLink href="#">Contact</NavLink></List>
                     </NavList>
                 </Nav>
             </ContactBox>
@@ -27,11 +26,11 @@ export default function contact() {
                 <H5>Our services</H5>
                 <Nav>
                     <NavList>
-                        <List><Link smooth to={'#'}><NavLink>Web design</NavLink></Link></List>
-                        <List><Link smooth to={'#'}><NavLink>Web development</NavLink></Link></List>
-                        <List><Link smooth to={'#'}><NavLink>Marketing</NavLink></Link></List>
-                        <List><Link smooth to={'#'}><NavLink>Product management</NavLink></Link></List>
-                        <List><Link smooth to={'#'}><NavLink>Graphic design</NavLink></Link></List>
+                        <List><NavLink href="#">Web design</NavLink></List>
+                        <List><NavLink href="#">Web development</NavLink></List>
+                        <List><NavLink href="#">Marketing</NavLink></List>
+                        <List><NavLink href="#">Product management</NavLink></List>
+                        <List><NavLink href="#">Graphic design</NavLink></List>
                     </NavList>
                 </Nav>
             </ContactBox>
@@ -40,10 +39,10 @@ export default function contact() {
                 <H5>Information</H5>
                 <Nav>
                     <NavList>
-                        <List><Link smooth to={'#'}><NavLink>About us</NavLink></Link></List>
-                        <List><Link smooth to={'#'}><NavLink>Delivery information</NavLink></Link></List>
-                        <List><Link smooth to={'#'}><NavLink>Privacy policy</NavLink></Link></List>
-                        <List><Link smooth to={'#'}><NavLink>Terms & condition</NavLink></Link></List>
+                        <List><NavLink href="#">About us</NavLink></List>
+                        <List><NavLink href="#">Delivery information</NavLink></List>
+                        <List><NavLink href="#">Privacy policy</NavLink></List>
+                        <List><NavLink href="#">Terms & condition</NavLink></List>
                     </NavList>
                 </Nav>
             </ContactBox>
@@ -51,10 +50,18 @@ export default function contact() {
             <ContactBox>
                 <H5>Contact us</H5>
                 <SocialIcons>
-                    <Icon><RiFacebookFill/></Icon>
-                    <Icon><FaInstagram/></Icon>
-                    <Icon><FaTwitter/></Icon>
-                    <Icon><FaYoutube/></Icon>
+                    <Icon>
+                        <RiFacebookFill/>
+                    </Icon>
+                    <Icon>
+                        <FaInstagram/>
+                    </Icon>
+                    <Icon>
+                        <FaTwitter/>
+                    </Icon>
+                    <Icon>
+                        <FaYoutube/>
+                    </Icon>
                 </SocialIcons>
             </ContactBox>
         </Contact>

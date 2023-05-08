@@ -9,7 +9,7 @@ import Contact from "./components/contact/Contact"
 
 export default function App() {
   return (
-    <div className="App">
+    <>
       <GlobalStyles/>
       <Header/>
       <Home/>
@@ -18,6 +18,6 @@ export default function App() {
       <Services/>
       <Cta/>
       <Contact/>
-    </div>
+    </>
   )
 }

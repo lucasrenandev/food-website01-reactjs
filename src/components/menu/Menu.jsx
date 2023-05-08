@@ -18,7 +18,7 @@ export default function menu() {
 
             <MenuContainer>
                 <MenuBox>
-                    <Image src={foodImg1} alt="food image 1"></Image>
+                    <Image src={foodImg1} alt="food image 1"/>
                     <H3>Chicken burger</H3>
                     <H4>Tasty food</H4>
                     <Small>$11.00</Small>
@@ -26,7 +26,7 @@ export default function menu() {
                 </MenuBox>
 
                 <MenuBox>
-                    <Image src={foodImg2} alt="food image 2"></Image>
+                    <Image src={foodImg2} alt="food image 2"/>
                     <H3>Special beef burger</H3>
                     <H4>Tasty food</H4>
                     <Small>$11.00</Small>
@@ -34,7 +34,7 @@ export default function menu() {
                 </MenuBox>
 
                 <MenuBox>
-                    <Image src={foodImg3} alt="food image 3"></Image>
+                    <Image src={foodImg3} alt="food image 3"/>
                     <H3>Chicken fry pack</H3>
                     <H4>Tasty food</H4>
                     <Small>$11.00</Small>

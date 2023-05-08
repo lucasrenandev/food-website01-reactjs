@@ -2,8 +2,7 @@ import { Header,
 Logo, 
 NavBar, 
 NavList, 
-List, 
-LinkNav, 
+List,  
 MenuIcon } from "./styled";
 import { HashLink as Link } from "react-router-hash-link"
 import { BiMenu } from "react-icons/bi"
@@ -11,24 +10,24 @@ import { IoClose } from "react-icons/io5"
 import { useEffect, useRef, useState } from "react";
 
 export default function header() {
-    const [menuIcon, setMenuIcon] = useState(BiMenu)
+    const [menuIcon, setMenuIcon] = useState(<BiMenu/>)
     const navRef = useRef(null)
 
     const toggleMenu = () => {
         if(navRef.current.classList.contains("active")) {
             navRef.current.classList.remove("active")
-            setMenuIcon(BiMenu)
+            setMenuIcon(<BiMenu/>)
         }
         else {
             navRef.current.classList.add("active")
-            setMenuIcon(IoClose)
+            setMenuIcon(<IoClose/>)
         }
     }
 
     const hidleMenu = () => {
         window.addEventListener("scroll", () => {
             navRef.current.classList.remove("active")
-            setMenuIcon(BiMenu)
+            setMenuIcon(<BiMenu/>)
         })
     }
 
@@ -42,23 +41,23 @@ export default function header() {
             <NavBar ref={navRef} onScroll={hidleMenu}>
                 <NavList>
                     <List>
-                        <Link smooth to={'#home'}><LinkNav>Home</LinkNav></Link>
+                        <Link className="nav-link" smooth to={'#home'}>Home</Link>
                     </List>
 
                     <List>
-                        <Link smooth to={'#about'}><LinkNav>About</LinkNav></Link>
+                        <Link className="nav-link" smooth to={'#about'}>About</Link>
                     </List>
 
                     <List>
-                        <Link smooth to={'#menu'}><LinkNav>Menu</LinkNav></Link>
+                        <Link className="nav-link" smooth to={'#menu'}>Menu</Link>
                     </List>
 
                     <List>
-                        <Link smooth to={'#services'}><LinkNav>Services</LinkNav></Link>
+                        <Link className="nav-link" smooth to={'#services'}>Services</Link>
                     </List>
 
                     <List>
-                        <Link smooth to={'#contact'}><LinkNav>Contact</LinkNav></Link>
+                        <Link className="nav-link" smooth to={'#contact'}>Contact</Link>
                     </List>
                 </NavList>
             </NavBar>

@@ -8,7 +8,7 @@ export default function about() {
     return(
         <About id="about">
             <AboutImage>
-                <Image src={aboutImg}></Image>
+                <Image src={aboutImg} alt="About image"/>
             </AboutImage>
 
             <AboutText>
